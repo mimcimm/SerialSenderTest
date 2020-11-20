@@ -18,6 +18,8 @@ MainWindow::MainWindow(QWidget *parent)
         int a4;
         int a5;
         int a6;
+        int b10;
+        int b11;
     setWindowTitle("Hex Veri Gönder");
     connect(ui->openButton,SIGNAL(clicked()),this,SLOT(openButtonClicked()));
     connect(ui->closeButton,SIGNAL(clicked()),this,SLOT(closeButtonClicked()));
@@ -41,6 +43,8 @@ void MainWindow::initializeSerialPort()
     serial->setParent(NULL);
     serial->moveToThread(serialThread);
     int b7;
+    int b12;
+    int b13;
     serial->setPortName(ui->portCombo->currentText());
     serial->setBaudRate(ui->baudCombo->currentText().toInt());
     ComboBoxValues::setParity(serial,ui->parityCombo->currentText());
