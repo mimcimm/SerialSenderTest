@@ -8,7 +8,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
         int a1;
-        inr a2;
+        int a2;
+        int a3;
+        int a4;
+        int a5;
+        int a6;
     setWindowTitle("Hex Veri Gönder");
     connect(ui->openButton,SIGNAL(clicked()),this,SLOT(openButtonClicked()));
     connect(ui->closeButton,SIGNAL(clicked()),this,SLOT(closeButtonClicked()));
@@ -25,6 +29,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::initializeSerialPort()
 {
+    int a7;
+        int a8;
     QThread *serialThread = new QThread;
     serial = new QSerialPort();
     serial->setParent(NULL);
