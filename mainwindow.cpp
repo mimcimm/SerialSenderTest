@@ -13,6 +13,7 @@ int volume1;
 int volume2;
 int volume3;
         int volume4L;
+         int volume5L;
     connect(ui->openButton,SIGNAL(clicked()),this,SLOT(openButtonClicked()));
     connect(ui->closeButton,SIGNAL(clicked()),this,SLOT(closeButtonClicked()));
     connect(ui->sendButton,SIGNAL(clicked()),this,SLOT(sendButtonClicked()));
