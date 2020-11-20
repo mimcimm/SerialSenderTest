@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+        int axx;
+        int axx2;
         int a1;
         int b2;
         int b3;
@@ -18,14 +20,11 @@ MainWindow::MainWindow(QWidget *parent)
         int a4;
         int a5;
         int a6;
-<<<<<<< HEAD
         int b10;
         int b11;
-=======
           int a7;
         int a8;
         int a9;
->>>>>>> 7caefde5e454acb972e212f229de7c7c605af7be
     setWindowTitle("Hex Veri Gönder");
     connect(ui->openButton,SIGNAL(clicked()),this,SLOT(openButtonClicked()));
     connect(ui->closeButton,SIGNAL(clicked()),this,SLOT(closeButtonClicked()));
